@@ -62,6 +62,6 @@
 
 ## Slide 8: Thank You!
 **Feel free to connect or view my interactive portfolio.**
-- **GitHub:** [https://github.com/sricharan-A](https://github.com/sricharan-A)
+- **GitHub:** [https://github.com/SricharanAsr](https://github.com/SricharanAsr)
 - **LinkedIn:** [https://linkedin.com/in/sricharan-a](https://linkedin.com/in/sricharan-a)
 - **Portfolio Website:** [Replace with GitHub Pages URL]
