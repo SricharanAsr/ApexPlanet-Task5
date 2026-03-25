@@ -44,13 +44,14 @@ Apex Software Solutions — Internship Capstone 2026
 
 ---
 
-## Slide 6: Project 4 - GCP ML Pipeline (Capstone)
-**Predicting Shipment Delivery Delays.**
-1. **Data Lake:** Ingested demographic & shipping CSV datasets into Google Cloud Storage (GCS).
-2. **Compute:** Provisioned scalable Compute Engine VMs for execution environments.
-3. **Training Environment:** Utilized Vertex AI Workbench for model development.
-4. **Machine Learning Model:** Tuned and optimized an XGBoost Classification model.
-5. **Dashboard/UI:** Displayed accuracy, precision, and recall metrics dynamically via Kubernetes Secrets & Auth APIs to maintain strict access control.
+## Slide 6: Project 4 - Cloud Intelligence (Capstone)
+**Architecting an End-to-End GCP ML Pipeline.**
+1. **Data Ingestion:** Large-scale dataset ingestion into **Google Cloud Storage** buckets with automated schema validation.
+2. **Compute Engine:** Provisioned custom Linux VM instances optimized for memory-intensive modeling tasks.
+3. **Vertex AI Workbench:** Utilized managed Jupyter environments for iterative model prototyping and evaluation.
+4. **XGBoost Optimization:** Hyperparameter tuning of Gradient Boosted Trees for maximum predictive precision.
+5. **Insights Dashboard:** Real-time metrics visualization with secure authentication protocols.
+
 
 ---
 
