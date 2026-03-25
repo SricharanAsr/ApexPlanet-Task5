@@ -39,5 +39,11 @@ You can view the interactive elements of this project by:
 2. Opening `presentation/index.html` to view the interactive slide deck.
 3. Enabling **GitHub Pages** from the `main` branch to host the portfolio live on the web.
 
+## 🗺️ Future Roadmap
+- **Interactive Data Visualizations:** Integration of D3.js for real-time portfolio analytics.
+- **Blog Integration:** A technical blog section for sharing research on equity markets and deep learning.
+- **Dark/Light Mode Toggle:** Dynamic theme switching for enhanced user accessibility.
+- **Expanded Project Case Studies:** Detailed technical post-mortems for each major project.
+
 ---
 *Developed by Sricharan A | Data Analyst Intern | Apex Software Solutions*
