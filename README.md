@@ -11,6 +11,14 @@ The primary objective of this repository is to consolidate all internship work i
 - **`presentation/index.html`**: A refined, interactive presentation deck built with Reveal.js that provides an elegant walkthrough of the portfolio's architecture and the skills demonstrated.
 - **`Presentation_Deck.md`**: A clean, universally compatible markdown version of the presentation deck.
 
+## ✨ Key Features
+- **Glassmorphic UI:** Modern design with backdrop filters and translucent panels.
+- **Interactive Animations:** Subtle CSS animations for orbs, grids, and hover states.
+- **Dynamic SEO:** Fully optimized meta tags for social sharing and search visibility.
+- **Responsive Architecture:** Fluid layouts that adapt from mobile to extra-wide displays.
+- **Data-Focused Experience:** Professional presentation of analyst internships and technical projects.
+
+
 ## 🛠️ Technical Skills Demonstrated
 In the creation of this final capstone repository, several key skills were demonstrated:
 - **Web Development:** Modern HTML5 and CSS3 (Flexbox, CSS Grid, custom animations, and responsive breakpoints).
