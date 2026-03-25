@@ -1,18 +1,19 @@
 # Capstone Portfolio Presentation Deck
 
-## Slide 1: Title
-**Capstone Portfolio: Data Analyst Internship**
-*Presented by Sricharan A*
-*Apex Software Solutions*
+## Slide 1: Professional Identity
+**Sricharan A | Data Analyst & Full-Stack Engineer**
+*Bridging Data Science with Software Excellence*
+Apex Software Solutions — Internship Capstone 2026
 
 ---
 
-## Slide 2: Internship Journey Overview
-**Bridging the gap between code architecture, big data storage, and scalable cloud ML pipelines.**
-- Code Professionalization & CI/CD
-- IoT Data Simulation & Distributed Storage
-- High-Throughput Data Pipeline Engineering
-- End-to-End Cloud ML Pipeline Deployment
+## Slide 2: The Internship Odyssey
+**Empowering business decisions through robust data engineering and cloud scalability.**
+- **Foundation:** Code Professionalization & CI/CD Workflows
+- **Ingestion:** IoT Data Simulation & Distributed Storage (HBase)
+- **Scale:** High-Throughput Data Pipeline Engineering
+- **Intelligence:** End-to-End Cloud ML Pipeline (XGBoost)
+
 
 ---
 
