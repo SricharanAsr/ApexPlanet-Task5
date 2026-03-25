@@ -337,6 +337,43 @@ h1, h2, h3, h4 {
     margin-top: 2rem;
 }
 
+.competency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.comp-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.comp-item i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+}
+
+.comp-item span {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.comp-item:hover {
+    background: rgba(0, 242, 254, 0.05);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: var(--glass-glow);
+}
+
 .tag {
     padding: 0.5rem 1.2rem;
     background: rgba(0, 242, 254, 0.1);
@@ -345,6 +382,14 @@ h1, h2, h3, h4 {
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 600;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.tag:hover {
+    background: var(--primary);
+    color: var(--darker);
+    box-shadow: var(--glass-glow);
 }
 
 /* Timeline */
