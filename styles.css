@@ -249,17 +249,20 @@ h1, h2, h3, h4 {
 .social-btn:hover {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2), var(--glass-glow);
+    border-color: var(--primary);
 }
 
 .highlight-btn {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     border: none;
     color: var(--darker);
+    box-shadow: 0 4px 15px rgba(0, 242, 254, 0.2);
 }
 
 .highlight-btn:hover {
     background: linear-gradient(135deg, var(--secondary), var(--primary));
+    box-shadow: 0 6px 20px rgba(0, 242, 254, 0.4);
 }
 
 /* Code Window */
