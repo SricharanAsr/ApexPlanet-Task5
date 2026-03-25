@@ -502,6 +502,55 @@ h1, h2, h3, h4 {
 .check-list i { color: #27c93f; }
 .sub-skill-title { margin-bottom: 1rem; color: var(--secondary); }
 
+/* Tech Grid */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+.tech-item i {
+    font-size: 2.5rem;
+    color: var(--text-muted);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.tech-item span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.tech-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--primary);
+    transform: translateY(-8px);
+    box-shadow: var(--glass-glow);
+}
+
+.tech-item:hover i {
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
+.tech-item:hover span {
+    color: var(--light);
+}
+
 /* Projects */
 .project-card {
     padding: 2.5rem;
