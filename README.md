@@ -26,6 +26,13 @@ In the creation of this final capstone repository, several key skills were demon
 - **Technical Communication:** Writing clear, concise, and professional documentation and presentations.
 - **Version Control & CI/CD Basics:** Managing project structure iteratively through Git and preparing for continuous deployment via GitHub Pages.
 
+## 🚀 Quick Start
+To run this project locally:
+1. Clone the repository: `git clone https://github.com/SricharanAsr/ApexPlanet-Task5.git`
+2. Navigate to the directory: `cd ApexPlanet-Task5`
+3. Open `index.html` in your browser.
+4. (Optional) Use a local server like Live Server for the best experience.
+
 ## 🌐 Viewing the Portfolio
 You can view the interactive elements of this project by:
 1. Opening `index.html` locally in any modern web browser to view the portfolio website.
