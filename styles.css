@@ -4,14 +4,19 @@
     --primary: #00f2fe;
     --secondary: #4facfe;
     --accent: #f093fb;
+    --success: #00f5a0;
+    --warning: #f83a3a;
+    --info: #00d2ff;
     --dark: #07090f;
     --darker: #030407;
     --light: #f8fafc;
     --text-muted: #94a3b8;
+    --platinum: #e2e8f0;
     
     --glass-bg: rgba(15, 23, 42, 0.4);
     --glass-border: rgba(255, 255, 255, 0.08);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --glass-glow: 0 0 15px rgba(0, 242, 254, 0.3);
 }
 
 * {
