@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#07090f">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://github.com/SricharanAsr/ApexPlanet-Task5">
+    <meta name="author" content="Sricharan A">
     <meta name="keywords" content="Sricharan A, Portfolio, Data Analyst, Full-Stack Developer, FinTech, Python, C++, Snowflake, SQL, GCP, Machine Learning, ApexPlanet">
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Sricharan A | Portfolio">
@@ -16,6 +20,10 @@
     <meta name="twitter:description" content="Sricharan A - Full-Stack Developer & Data Analyst Portfolio">
     <meta name="description" content="Sricharan A - Full-Stack Developer & Data Analyst Portfolio">
     <title>Sricharan A | Comprehensive Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" as="style">
+    <link rel="preload" href="styles.css" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- FontAwesome for icons -->
@@ -36,12 +44,12 @@
         <div class="nav-content">
             <h1 class="logo">SRICHARAN<span class="highlight">_A</span></h1>
             <ul class="nav-links">
-                <li><a href="#about" aria-label="About Section"><i class="fa-solid fa-user"></i> About</a></li>
-                <li><a href="#experience" aria-label="Experience Section"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
-                <li><a href="#education" aria-label="Education Section"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
-                <li><a href="#skills" aria-label="Skills Section"><i class="fa-solid fa-code"></i> Skills</a></li>
-                <li><a href="#projects" aria-label="Projects Section"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
-                <li><a href="#certifications" aria-label="Certifications Section"><i class="fa-solid fa-certificate"></i> Certs</a></li>
+                <li><a href="#about" aria-label="About Section"><i class="fa-solid fa-user" aria-hidden="true"></i> About</a></li>
+                <li><a href="#experience" aria-label="Experience Section"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Experience</a></li>
+                <li><a href="#education" aria-label="Education Section"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Education</a></li>
+                <li><a href="#skills" aria-label="Skills Section"><i class="fa-solid fa-code" aria-hidden="true"></i> Skills</a></li>
+                <li><a href="#projects" aria-label="Projects Section"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Projects</a></li>
+                <li><a href="#certifications" aria-label="Certifications Section"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Certs</a></li>
             </ul>
         </div>
     </nav>
@@ -54,14 +62,20 @@
                 <h1 class="title">Sricharan <span class="gradient-text">A</span></h1>
                 <h2 class="subtitle">Full-Stack Developer | Data Analyst | FinTech Enthusiast</h2>
                 <div class="contact-info">
-                    <span><i class="fa-solid fa-location-dot"></i> Chennai, India</span>
-                    <span><i class="fa-solid fa-phone"></i> +91-81222 60941</span>
-                    <a href="mailto:cb.sc.u4cse23764@cb.students.amrita.edu" aria-label="Email Me"><i class="fa-solid fa-envelope"></i> Email Me</a>
+                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Chennai, India</span>
+                    <span><i class="fa-solid fa-phone" aria-hidden="true"></i> +91-81222 60941</span>
+                    <div class="email-wrapper">
+                        <a href="mailto:cb.sc.u4cse23764@cb.students.amrita.edu" aria-label="Email Me"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email Me</a>
+                        <button class="copy-email-btn" onclick="copyEmail()" aria-label="Copy Email Address">
+                            <i class="fa-solid fa-copy" aria-hidden="true"></i>
+                            <span class="copy-tooltip">Copied!</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/SricharanAsr" target="_blank" class="social-btn" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i> GitHub</a>
-                    <a href="https://linkedin.com/in/sricharan-a-08983031a" target="_blank" class="social-btn" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                    <a href="presentation/index.html" target="_blank" class="social-btn highlight-btn" aria-label="Capstone Presentation"><i class="fa-solid fa-tv"></i> Capstone Presentation</a>
+                    <a href="https://github.com/SricharanAsr" target="_blank" class="social-btn" aria-label="GitHub Profile"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/sricharan-a-08983031a" target="_blank" class="social-btn" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                    <a href="presentation/index.html" target="_blank" class="social-btn highlight-btn" aria-label="Capstone Presentation"><i class="fa-solid fa-tv" aria-hidden="true"></i> Capstone Presentation</a>
                 </div>
             </div>
             <div class="hero-graphic">
@@ -85,7 +99,7 @@ class Sricharan:
     </header>
 
     <!-- Executive Summary -->
-    <section id="about" class="container">
+    <section id="about" class="container reveal">
         <h2 class="section-title"><span class="highlight">01.</span> Executive Summary</h2>
         <div class="glass-panel content-flooded">
             <p class="large-text">
@@ -96,19 +110,19 @@ class Sricharan:
             </p>
             <div class="competency-grid">
                 <div class="comp-item">
-                    <i class="fa-solid fa-microchip"></i>
+                    <i class="fa-solid fa-microchip" aria-hidden="true"></i>
                     <span>System Architecture</span>
                 </div>
                 <div class="comp-item">
-                    <i class="fa-solid fa-database"></i>
+                    <i class="fa-solid fa-database" aria-hidden="true"></i>
                     <span>ETL & Data Modeling</span>
                 </div>
                 <div class="comp-item">
-                    <i class="fa-solid fa-shield-halved"></i>
+                    <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
                     <span>Cybersecurity Basics</span>
                 </div>
                 <div class="comp-item">
-                    <i class="fa-solid fa-chart-pie"></i>
+                    <i class="fa-solid fa-chart-pie" aria-hidden="true"></i>
                     <span>Quantitative Analysis</span>
                 </div>
             </div>
@@ -123,7 +137,7 @@ class Sricharan:
     </section>
 
     <!-- Experience Timeline -->
-    <section id="experience" class="container">
+    <section id="experience" class="container reveal">
         <h2 class="section-title"><span class="highlight">02.</span> Professional Experience</h2>
         <div class="timeline">
             <div class="timeline-item glass-panel">
@@ -154,11 +168,11 @@ class Sricharan:
     </section>
 
     <!-- Education -->
-    <section id="education" class="container">
+    <section id="education" class="container reveal">
         <h2 class="section-title"><span class="highlight">03.</span> Education</h2>
         <div class="grid-2">
             <div class="glass-panel edu-card">
-                <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+                <div class="edu-icon"><i class="fa-solid fa-university" aria-hidden="true"></i></div>
                 <div>
                     <h3>B.Tech Computer Science & Engineering</h3>
                     <p class="edu-school">Amrita Vishwa Vidyapeetham, Coimbatore</p>
@@ -166,7 +180,7 @@ class Sricharan:
                 </div>
             </div>
             <div class="glass-panel edu-card">
-                <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                <div class="edu-icon"><i class="fa-solid fa-school" aria-hidden="true"></i></div>
                 <div>
                     <h3>Higher Secondary Education (11th & 12th)</h3>
                     <p class="edu-school">Sri Chaitanya Techno School, Chennai</p>
@@ -177,11 +191,11 @@ class Sricharan:
     </section>
 
     <!-- Massive Skills Matrix -->
-    <section id="skills" class="container">
+    <section id="skills" class="container reveal">
         <h2 class="section-title"><span class="highlight">04.</span> Technical Arsenal</h2>
         <div class="skills-matrix">
             <div class="skill-group glass-panel">
-                <h3><i class="fa-solid fa-terminal"></i> Programming Languages</h3>
+                <h3><i class="fa-solid fa-code-branch" aria-hidden="true"></i> Programming & Logic</h3>
                 <div class="skill-bar-container">
                     <div class="skill-label">C++ / C <span class="skill-level">Advanced</span></div>
                     <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
@@ -201,11 +215,11 @@ class Sricharan:
             </div>
 
             <div class="skill-group glass-panel">
-                <h3><i class="fa-solid fa-cloud"></i> Cloud & Infrastructure</h3>
+                <h3><i class="fa-solid fa-server" aria-hidden="true"></i> Backend & Data Engineering</h3>
                 <div class="cloud-icons">
-                    <div class="c-icon"><i class="fa-brands fa-aws"></i> AWS (EC2, Deployments)</div>
-                    <div class="c-icon"><i class="fa-brands fa-google"></i> Google Cloud Platform</div>
-                    <div class="c-icon"><i class="fa-solid fa-snowflake"></i> Snowflake Data Warehouse</div>
+                    <div class="c-icon"><i class="fa-brands fa-google" aria-hidden="true"></i> GCP (Vertex AI, GCS)</div>
+                    <div class="c-icon"><i class="fa-solid fa-snowflake" aria-hidden="true"></i> Snowflake Warehouse</div>
+                    <div class="c-icon"><i class="fa-solid fa-database" aria-hidden="true"></i> SQL & NoSQL (HBase)</div>
                 </div>
                 <h4 class="sub-skill-title">Specializations:</h4>
                 <ul class="check-list">
@@ -219,60 +233,60 @@ class Sricharan:
     </section>
 
     <!-- Tools & Technologies Showcase -->
-    <section id="tech-stack" class="container">
+    <section id="tech-stack" class="container reveal">
         <h2 class="section-title"><span class="highlight">05.</span> Tools & Technologies</h2>
         <div class="tech-grid">
             <div class="tech-item" title="Python">
-                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-python" aria-hidden="true"></i>
                 <span>Python</span>
             </div>
             <div class="tech-item" title="C++">
-                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
                 <span>C++</span>
             </div>
             <div class="tech-item" title="JavaScript">
-                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-js" aria-hidden="true"></i>
                 <span>JavaScript</span>
             </div>
             <div class="tech-item" title="SQL">
-                <i class="fa-solid fa-database"></i>
+                <i class="fa-solid fa-database" aria-hidden="true"></i>
                 <span>SQL</span>
             </div>
             <div class="tech-item" title="GIT">
-                <i class="fa-brands fa-git-alt"></i>
+                <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
                 <span>Git</span>
             </div>
             <div class="tech-item" title="Docker">
-                <i class="fa-brands fa-docker"></i>
+                <i class="fa-brands fa-docker" aria-hidden="true"></i>
                 <span>Docker</span>
             </div>
             <div class="tech-item" title="Google Cloud">
-                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-google" aria-hidden="true"></i>
                 <span>GCP</span>
             </div>
             <div class="tech-item" title="Linux">
-                <i class="fa-brands fa-linux"></i>
+                <i class="fa-brands fa-linux" aria-hidden="true"></i>
                 <span>Linux</span>
             </div>
         </div>
     </section>
 
     <!-- Professional Methodologies -->
-    <section id="methodology" class="container">
+    <section id="methodology" class="container reveal">
         <h2 class="section-title"><span class="highlight">05.</span> Professional Methodologies</h2>
         <div class="grid-3">
             <div class="glass-panel soft-skill-card">
-                <i class="fa-solid fa-lightbulb"></i>
+                <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
                 <h3>Problem Solving</h3>
                 <p>Structured approach to complex technical challenges using first-principles thinking.</p>
             </div>
             <div class="glass-panel soft-skill-card">
-                <i class="fa-solid fa-comments"></i>
+                <i class="fa-solid fa-comments" aria-hidden="true"></i>
                 <h3>Communication</h3>
                 <p>Effective technical communication for bridging the gap between developers and stakeholders.</p>
             </div>
             <div class="glass-panel soft-skill-card">
-                <i class="fa-solid fa-vial"></i>
+                <i class="fa-solid fa-vial" aria-hidden="true"></i>
                 <h3>Analytical Rigor</h3>
                 <p>Meticulous attention to data integrity and statistical significance in all analytical workflows.</p>
             </div>
@@ -280,7 +294,7 @@ class Sricharan:
     </section>
 
     <!-- Comprehensive Projects Portfolio -->
-    <section id="projects" class="container">
+    <section id="projects" class="container reveal">
         <h2 class="section-title"><span class="highlight">05.</span> Featured Projects</h2>
         <div class="grid-3 projects-grid">
 
@@ -359,11 +373,11 @@ class Sricharan:
     </section>
 
     <!-- Massive Certifications List -->
-    <section id="certifications" class="container">
+    <section id="certifications" class="container reveal">
         <h2 class="section-title"><span class="highlight">06.</span> Certifications & Credentials</h2>
         <div class="cert-grid">
             <div class="cert-card glass-panel">
-                <div class="cert-icon"><i class="fa-solid fa-snowflake"></i></div>
+                <div class="cert-icon"><i class="fa-solid fa-snowflake" aria-hidden="true"></i></div>
                 <div class="cert-info">
                     <h3>Snowflake Hands-On Essentials: Data Warehouse</h3>
                     <span class="cert-issuer">Snowflake (2026)</span>
@@ -372,7 +386,7 @@ class Sricharan:
             </div>
 
             <div class="cert-card glass-panel">
-                <div class="cert-icon"><i class="fa-solid fa-handshake"></i></div>
+                <div class="cert-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
                 <div class="cert-info">
                     <h3>Fundamentals of B2B Selling in Tech</h3>
                     <span class="cert-issuer">LearnQuest / Coursera (2026)</span>
@@ -381,7 +395,7 @@ class Sricharan:
             </div>
 
             <div class="cert-card glass-panel">
-                <div class="cert-icon"><i class="fa-solid fa-users-gear"></i></div>
+                <div class="cert-icon"><i class="fa-solid fa-users-gear" aria-hidden="true"></i></div>
                 <div class="cert-info">
                     <h3>Consultative Selling and Buyer Engagement</h3>
                     <span class="cert-issuer">LearnQuest / Coursera (2026)</span>
@@ -390,7 +404,7 @@ class Sricharan:
             </div>
 
             <div class="cert-card glass-panel">
-                <div class="cert-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="cert-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
                 <div class="cert-info">
                     <h3>NISM-SEBI Investor Certification</h3>
                     <span class="cert-issuer">NISM (2025)</span>
@@ -399,7 +413,7 @@ class Sricharan:
             </div>
 
             <div class="cert-card glass-panel">
-                <div class="cert-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="cert-icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></div>
                 <div class="cert-info">
                     <h3>Credit Analyst Certification</h3>
                     <span class="cert-issuer">Standard Chartered (2025)</span>
@@ -408,7 +422,7 @@ class Sricharan:
             </div>
 
             <div class="cert-card glass-panel">
-                <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+                <div class="cert-icon"><i class="fa-brands fa-aws" aria-hidden="true"></i></div>
                 <div class="cert-info">
                     <h3>AWS Essentials</h3>
                     <span class="cert-issuer">Udemy (2024)</span>
@@ -417,7 +431,7 @@ class Sricharan:
             </div>
 
             <div class="cert-card glass-panel">
-                <div class="cert-icon"><i class="fa-brands fa-js"></i></div>
+                <div class="cert-icon"><i class="fa-brands fa-js" aria-hidden="true"></i></div>
                 <div class="cert-info">
                     <h3>JavaScript Projects</h3>
                     <span class="cert-issuer">Udemy (2024)</span>
@@ -431,18 +445,70 @@ class Sricharan:
         <div class="container text-center">
             <h2 class="footer-title">Let's Build the Future</h2>
             <div class="availability-badge">
-                <i class="fa-solid fa-circle-check"></i> Available for New Opportunities
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Available for New Opportunities
             </div>
             <p>Always open to discussing software engineering roles, data architecture, or the equity markets.</p>
             <div class="footer-links">
-                <a href="mailto:cb.sc.u4cse23764@cb.students.amrita.edu" class="btn-primary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
-                <a href="https://linkedin.com/in/sricharan-a-08983031a" target="_blank" class="btn-secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:cb.sc.u4cse23764@cb.students.amrita.edu" class="btn-primary"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact Me</a>
+                <a href="https://linkedin.com/in/sricharan-a-08983031a" target="_blank" class="btn-secondary"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
             </div>
             <p class="copyright">© 2026 Sricharan A. Designed & Engineered with precision.</p>
         </div>
     </footer>
     <a href="#home" class="scroll-top" aria-label="Scroll to Top">
-        <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
     </a>
+
+    <script>
+        // Active Navigation Link on Scroll
+        const sections = document.querySelectorAll('section, header');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        const observerOptions = {
+            root: null,
+            threshold: 0.3,
+            rootMargin: "-10%"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
+
+        // Section Reveal Animation
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Copy Email Functionality
+        function copyEmail() {
+            const email = "cb.sc.u4cse23764@cb.students.amrita.edu";
+            navigator.clipboard.writeText(email).then(() => {
+                const btn = document.querySelector('.copy-email-btn');
+                btn.classList.add('active');
+                setTimeout(() => {
+                    btn.classList.remove('active');
+                }, 2000);
+            });
+        }
+    </script>
 </body>
 </html>
