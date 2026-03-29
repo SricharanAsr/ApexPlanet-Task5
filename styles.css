@@ -13,6 +13,7 @@
     --text-muted: #94a3b8;
     --platinum: #e2e8f0;
     
+    /* Glassmorphism & Visual Effects */
     --glass-bg: rgba(15, 23, 42, 0.4);
     --glass-border: rgba(255, 255, 255, 0.08);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -162,6 +163,7 @@ h1, h2, h3, h4 {
 }
 
 /* Navigation */
+/* --- Navigation Bar --- */
 .glass-nav {
     position: fixed;
     top: 20px;
@@ -295,6 +297,7 @@ h1, h2, h3, h4 {
 }
 
 /* Hero Section */
+/* --- Hero Section --- */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -569,6 +572,7 @@ h1, h2, h3, h4 {
 }
 
 /* Timeline */
+/* --- Experience & Timeline --- */
 .timeline {
     position: relative;
     padding-left: 2rem;
@@ -728,6 +732,7 @@ h1, h2, h3, h4 {
 }
 
 /* Projects */
+/* --- Project Showcase --- */
 .project-card {
     padding: 2.5rem;
     display: flex;
