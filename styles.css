@@ -839,7 +839,24 @@ h1, h2, h3, h4 {
 .cert-icon { font-size: 2.5rem; color: var(--primary); display: flex; align-items: flex-start;}
 .cert-info h3 { font-size: 1.2rem; margin-bottom: 0.3rem;}
 .cert-issuer { font-family: var(--font-mono); font-size: 0.85rem; color: var(--secondary); display: block; margin-bottom: 0.8rem;}
-.cert-info p { font-size: 0.95rem; color: var(--text-muted); }
+.cert-info p { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem; }
+
+.cert-verify-link {
+    font-size: 0.8rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: var(--transition-base);
+    opacity: 0.8;
+}
+
+.cert-verify-link:hover {
+    opacity: 1;
+    transform: translateX(5px);
+}
 
 /* Footer */
 .main-footer {
