@@ -43,6 +43,11 @@
     <nav class="glass-nav">
         <div class="nav-content">
             <h1 class="logo">SRICHARAN<span class="highlight">_A</span></h1>
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#about" aria-label="About Section"><i class="fa-solid fa-user" aria-hidden="true"></i> About</a></li>
                 <li><a href="#experience" aria-label="Experience Section"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Experience</a></li>
@@ -497,6 +502,23 @@ class Sricharan:
         }, { threshold: 0.15 });
 
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Mobile Navigation Toggle
+        const mobileToggle = document.querySelector('.mobile-nav-toggle');
+        const navLinksList = document.querySelector('.nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinksList.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navLinksList.classList.remove('active');
+            });
+        });
 
         // Copy Email Functionality
         function copyEmail() {
